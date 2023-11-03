@@ -8,6 +8,8 @@
 		"dev": "cross-env NODE_ENV=development webpack --watch --mode development --progress",
 		"clean": "rm -rf build/*",
 		"svg": "svgr -d assets/src/js/icons src/icons",
+		"lint:php": "vendor/bin/phpcs",
+		"lint:php:fix": "vendor/bin/phpcbf",
 		"lint": "eslint assets/src/js/*",
 		"lint:fix": "eslint --fix src/js/*",
 		"lint-css": "stylelint 'assets/src/sass/**/*.scss'",
